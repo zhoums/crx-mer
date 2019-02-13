@@ -13,15 +13,8 @@ export const versionObj = () => {
   })
 }
 let moli_host, frontEndHost;
-if (process.env.NODE_ENV == "local") {
-  moli_host = config.backEndHost_dev
-  // frontEndHost = config.frontEndHost_dev
-  frontEndHost = config.tbPlatform;
-} else if (process.env.NODE_ENV == "production") {
-  moli_host = config.backEndHost_pro
-  // frontEndHost = config.frontEndHost_pro
-  frontEndHost = config.tbPlatform
-}
+moli_host = config.backEndHost
+frontEndHost = config.tbPlatform;
 
 export {
   moli_host,

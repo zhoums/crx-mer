@@ -15,7 +15,7 @@ import {
 } from './checkVersion'
 
 
-
+console.log('moli_host',moli_host)
 let headerObj = {
   version: app_version,
   vs: app_vs,

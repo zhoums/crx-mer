@@ -1,10 +1,11 @@
+let willbeServer='http://47.107.35.8:8281/spider';
+if(process.env.NODE_ENV=="development"){
+  willbeServer='http://spider.ittun.com/spider'
+}else if(process.env.NODE_ENV=='local'){
+  willbeServer='http://spider.ittun.com/spider'
+}
 let config = {
-
-  //只要修改这两个参数就可以
- // backEndHost_dev: 'http://molitest.willbe.net.cn/spider', //DEV 用于接收数据的后台接口域名
-  backEndHost_dev: 'http://spider.ittun.com/spider', //DEV 用于接收数据的后台接口域名
-  // backEndHost_sit: 'http://molitest.willbe.net.cn/spider', //DEV 用于接收数据的后台接口域名
-  backEndHost_pro: 'http://47.107.35.8:8281/spider', //PRO 用于接收数据的后台接口域名
+  backEndHost: willbeServer,
   //请求淘宝接口的时间间隔
   max_interval: 1000,
   min_interval: 350,
