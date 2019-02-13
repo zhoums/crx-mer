@@ -16,6 +16,4 @@ let config = {
 export const app_version = '1.2.3'; //全量数据 30天
 export const app_vs = 5;
 
-
-
 export default config;
